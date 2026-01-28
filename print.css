@@ -1,0 +1,284 @@
+/* APA 7th Edition Print Stylesheet */
+@media print {
+    /* Reset dark mode for print */
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* Page setup - APA requires 1-inch margins */
+    @page {
+        size: letter;
+        margin: 1in;
+    }
+
+    /* Hide non-printable elements */
+    body::before,
+    .container > header,
+    .container > main,
+    .container > footer,
+    .modal-close,
+    .print-btn,
+    .card,
+    .card-icon,
+    .card-meta,
+    .legend,
+    .checklist input[type="checkbox"] {
+        display: none !important;
+    }
+
+    /* Show only modal content when printing */
+    body {
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 12pt !important;
+        line-height: 2 !important; /* APA requires double-spacing */
+        background: white !important;
+    }
+
+    .modal-overlay {
+        position: static !important;
+        background: white !important;
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        padding: 0 !important;
+    }
+
+    .modal-overlay.active {
+        display: block !important;
+    }
+
+    .modal {
+        position: static !important;
+        max-width: none !important;
+        max-height: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        transform: none !important;
+        box-shadow: none !important;
+        background: white !important;
+    }
+
+    .modal-header {
+        border-bottom: none !important;
+        padding: 0 0 0.5in 0 !important;
+    }
+
+    .modal-title {
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        text-align: center !important;
+    }
+
+    .modal-content {
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+
+    /* Content Styling for APA */
+    .content-section {
+        page-break-inside: avoid;
+    }
+
+    .content-section h3 {
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        text-align: center !important;
+        margin-bottom: 0.5in !important;
+    }
+
+    .content-subtitle {
+        font-style: italic !important;
+        text-align: center !important;
+        margin-bottom: 0.5in !important;
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+    }
+
+    .content-body {
+        font-size: 12pt !important;
+        line-height: 2 !important;
+    }
+
+    .content-body h4 {
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        margin: 0 0 0 0 !important;
+        text-indent: 0.5in;
+        page-break-after: avoid;
+    }
+
+    .content-body h5 {
+        font-family: 'Times New Roman', Times, serif !important;
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        font-style: italic !important;
+    }
+
+    .content-body p {
+        text-indent: 0.5in !important;
+        margin-bottom: 0 !important;
+        text-align: left !important;
+        orphans: 2;
+        widows: 2;
+    }
+
+    .content-body blockquote {
+        margin: 0.5in 0 0.5in 0.5in !important;
+        padding: 0 !important;
+        border: none !important;
+        background: none !important;
+    }
+
+    .content-body blockquote p {
+        text-indent: 0 !important;
+    }
+
+    /* Hanging indent for references - APA style */
+    .reference-list {
+        list-style: none !important;
+        padding: 0 !important;
+    }
+
+    .reference-list li {
+        padding-left: 0.5in !important;
+        text-indent: -0.5in !important;
+        margin-bottom: 0 !important;
+        line-height: 2 !important;
+        border: none !important;
+        background: none !important;
+        page-break-inside: avoid;
+    }
+
+    .reference-list li em {
+        font-style: italic !important;
+    }
+
+    /* Tables */
+    table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+        margin: 0.25in 0 !important;
+        font-size: 10pt !important;
+        line-height: 1.5 !important;
+    }
+
+    th, td {
+        border: 1px solid #000 !important;
+        padding: 0.1in !important;
+        text-align: left !important;
+    }
+
+    th {
+        font-weight: bold !important;
+    }
+
+    /* Lists */
+    ol, ul {
+        margin-left: 0.5in !important;
+        line-height: 2 !important;
+    }
+
+    li {
+        margin-bottom: 0 !important;
+    }
+
+    /* Content meta */
+    .content-meta {
+        border-top: 1px solid #000 !important;
+        margin-top: 0.5in !important;
+        padding-top: 0.25in !important;
+        font-size: 10pt !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Page breaks */
+    .content-section h4 {
+        page-break-after: avoid;
+    }
+
+    .checklist-group {
+        page-break-inside: avoid;
+    }
+
+    /* Checklist items for print */
+    .checklist li {
+        display: block !important;
+        padding-left: 1.5em !important;
+        position: relative;
+    }
+
+    .checklist li::before {
+        content: "\2610" !important; /* Empty checkbox unicode */
+        position: absolute;
+        left: 0;
+    }
+
+    /* Overview grids for print */
+    .overview-grid,
+    .themes-grid {
+        display: block !important;
+    }
+
+    .overview-item,
+    .theme-card {
+        border: 1px solid #ccc !important;
+        margin-bottom: 0.25in !important;
+        padding: 0.15in !important;
+        page-break-inside: avoid;
+    }
+
+    .theme-num {
+        position: static !important;
+        display: inline !important;
+        background: none !important;
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .theme-num::after {
+        content: ". " !important;
+    }
+
+    /* Status badges */
+    .status-complete,
+    .status-high,
+    .status-medium {
+        background: none !important;
+        padding: 0 !important;
+        font-weight: bold !important;
+    }
+
+    /* Links */
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    /* Show URLs after links */
+    .reference-list a::after {
+        content: "" !important; /* URLs already visible in references */
+    }
+
+    /* Hide elements that don't make sense in print */
+    .modal-overlay:not(.active) {
+        display: none !important;
+    }
+}
+
+/* Print preview adjustments */
+@media print and (color) {
+    /* For color printers, keep some distinction */
+    .ref-high {
+        border-left: 3px solid #10b981 !important;
+    }
+
+    .ref-medium {
+        border-left: 3px solid #f59e0b !important;
+    }
+}
