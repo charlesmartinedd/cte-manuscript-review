@@ -85,6 +85,19 @@
                 <p class="card-desc">Study summary, five themes addressed, and next steps for submission</p>
                 <span class="card-meta">Summary</span>
             </article>
+
+            <article class="card" data-modal="critical-considerations">
+                <div class="card-icon" style="background: rgba(239, 68, 68, 0.15);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        <line x1="12" y1="9" x2="12" y2="13"></line>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                </div>
+                <h2 class="card-title">Critical Considerations</h2>
+                <p class="card-desc">AI equity concerns for Limitations section: algorithmic bias, false positives, and healthcare disparities</p>
+                <span class="card-meta">3 paragraphs</span>
+            </article>
         </main>
 
         <footer>
@@ -454,6 +467,45 @@
             <div class="content-meta">
                 <p><strong>Created:</strong> January 2026</p>
                 <p><strong>Status:</strong> Ready for co-author review</p>
+            </div>
+        </section>
+    </template>
+
+    <template id="critical-considerations-content">
+        <section class="content-section">
+            <h3>Critical Considerations: AI Equity in Healthcare</h3>
+            <p class="content-subtitle">Draft paragraphs for the Limitations section addressing equity concerns with predictive AI</p>
+
+            <div class="content-body">
+                <h4>Algorithmic Bias as Systemic Issue</h4>
+                <blockquote>
+                    <p>While this study acknowledges the potential for AI to augment early detection of mental health concerns, critical scholarship urges caution regarding predictive AI applications in healthcare. Broussard (2023) argues in <em>More than a Glitch</em> that algorithmic bias is not an incidental error easily corrected, but rather a systemic issue coded into the technology itself. AI systems in healthcare are predominantly trained on data from urban hospitals, research institutions, and wealthy nations, systematically excluding rural populations, ethnic minorities, indigenous communities, and socially marginalized groups (Frontiers in Public Health, 2025). This training data inequity means that AI models may perform well for populations resembling the training data while producing unreliable or harmful results for underrepresented communities.</p>
+                </blockquote>
+
+                <h4>Impact on Minority Populations and Funding Concerns</h4>
+                <blockquote>
+                    <p>The question of who develops and funds predictive AI systems carries significant implications for healthcare equity. Research indicates that the technology industry remains predominantly White, male, and affluent, resulting in AI systems that reflect these narrow perspectives (Hanna, Distributed AI Research Institute). A well-documented example illustrates this concern: an algorithm widely used to allocate healthcare resources systematically disadvantaged Black patients because it relied on healthcare spending as a proxy for health needs. Because Black patients often have lower healthcare expenditures due to systemic barriers to access, the algorithm concluded they required fewer resources, perpetuating a cycle of underfunding and neglect (Office of Minority Health, 2024). MIT researchers have further demonstrated that AI models analyzing medical images can predict patient demographics with high accuracy, and those models most adept at predicting race exhibit the largest diagnostic accuracy gaps for women and Black patients, suggesting reliance on improper "demographic shortcuts" rather than clinical indicators (Nature Digital Medicine, 2025).</p>
+                </blockquote>
+
+                <h4>False Positives and Unintended Consequences</h4>
+                <blockquote>
+                    <p>Predictive AI also raises concerns about overdiagnosis and the psychological burden of false positives. Research indicates that 50% of women receiving annual breast cancer screenings over a ten-year period experience at least one false positive result, leading to additional testing, procedures, and significant anxiety (UC Davis Health). As AI systems become more sensitive, this rate may increase rather than decrease. As Adamson and Welch observe, "People think the goal is to find more cancer. That's not our goal. Our goal is to find cancers that will ultimately kill people" (MIT Technology Review, 2023). AI tools may "just be able to overdiagnose at a faster rate" without meaningfully improving patient outcomes. These considerations do not negate the potential benefits discussed in this study's Practice Implications; rather, they underscore the need for CTE Health Science Pathway programs to prepare students not only to use AI tools but to critically evaluate their limitations, question whose interests they serve, and advocate for equitable implementation that centers the needs of historically marginalized populations.</p>
+                </blockquote>
+
+                <h4>References for This Section (APA 7th Edition)</h4>
+                <ul class="reference-list">
+                    <li>Broussard, M. (2023). <em>More than a glitch: Confronting race, gender, and ability bias in tech</em>. MIT Press. https://mitpress.mit.edu/9780262548328/more-than-a-glitch/</li>
+                    <li>Frontiers in Public Health. (2025). Algorithmic bias in public health AI: A silent threat to equity in low-resource settings. https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1643180/full</li>
+                    <li>Hern, A. (2023, September 15). AI can help screen for cancer but there's a catch. <em>MIT Technology Review</em>. https://www.technologyreview.com/2023/09/15/1079499/ai-cancer-screening-overdiagnosis/</li>
+                    <li>Nature Digital Medicine. (2025). Bias recognition and mitigation strategies in artificial intelligence healthcare applications. https://www.nature.com/articles/s41746-025-01503-7</li>
+                    <li>Office of Minority Health. (2024, June). Evolving perspectives on healthcare algorithmic and artificial intelligence bias. U.S. Department of Health and Human Services. https://minorityhealth.hhs.gov/news/evolving-perspectives-healthcare-algorithmic-and-artificial-intelligence-bias</li>
+                </ul>
+            </div>
+
+            <div class="content-meta">
+                <p><strong>Word Count:</strong> ~450 words (3 paragraphs)</p>
+                <p><strong>Section:</strong> Limitations</p>
+                <p><strong>Themes Connected:</strong> Equity, algorithmic bias, healthcare disparities, AI literacy</p>
             </div>
         </section>
     </template>

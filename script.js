@@ -15,7 +15,8 @@ const modalTitles = {
     'literature-review': 'Literature Review Updates',
     'references': 'Additional References',
     'edit-notes': 'Edit Notes',
-    'overview': 'Project Overview'
+    'overview': 'Project Overview',
+    'critical-considerations': 'Critical Considerations: AI Equity'
 };
 
 // Open modal
