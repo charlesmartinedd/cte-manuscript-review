@@ -13,7 +13,7 @@ const cards = document.querySelectorAll('.card[data-modal]');
 const modalTitles = {
     'practice-implications': 'Practice Implications',
     'literature-review': 'Literature Review Updates',
-    'references': 'APA7 References',
+    'references': 'Additional References',
     'edit-notes': 'Edit Notes',
     'overview': 'Project Overview'
 };
